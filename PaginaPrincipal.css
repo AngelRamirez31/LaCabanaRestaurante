@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #FFFFFF; 
+    color: #000000; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.swiper-button-prev::after {
+    font-size: 25px;
+}
+
+.swiper-button-next::after {
+    font-size: 25px;
+}
+
+.swiper-button-next {
+    color: #e49800; 
+}
+
+.swiper-button-prev {
+    color: #e49800; 
+}
+
+.swiper-pagination-bullet {
+    background-color: #0d0d0d;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #e49800; 
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+}
+
+.menu-1 {
+    margin-right: 180px;
+}
+
+.menu-2 {
+    margin-left: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-1 {
+    width: 0;
+}
+
+.logo-2 {
+    width: 150px;
+}
+
+.socials {
+    display: flex;
+}
+
+.social {
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #e49800;  
+    border-radius: 50%;
+    background-color: #000000; 
+}
+
+.social:hover {
+    background-color: #e49800;  
+}
+
+.social img {
+    margin: 8px 0 0 10px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li {
+    font-size: 18px;
+    padding: 20px;
+    color: #000000; 
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #000000;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    margin-top: 200px;
+    padding-bottom: 50px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+.slider-txt {
+    margin-left: 85px;
+    width: 50%;
+}
+
+.slider-txt h1 {
+    font-size: 70px;
+    color: #000000; /*Titulos principales del slide principal*/
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.slider-txt p {
+    font-size: 18px;
+    color: #A7A7A7; /*Texto del slide principal*/
+}
+
+.botones {
+    margin-top: 50px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid #0d0d0d; /*Color del borde*/
+    color: #000000; /* Color de los botones del slide principal(comprar, menu)*/                                                                                                   
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.btn1:hover {
+    background-color: #0d0d0d; 
+}
+
+.slider-img {
+    width: 50%;
+}
+
+.slider-img img {
+    margin-right: 225px;
+    width: 550px;
+}
+
+.products {
+    background-color: #f4f4f4; /*Color del fondo de los productos de pizza, pasta y ensaladas*/
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0px;
+}
+
+.tabs label {
+    width: 15%;
+    order: 1;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    color: #A7A7A7;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: background ease 0.2s;
+}
+
+.tabs .tab {
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding-top: 25px;
+}
+
+.tabs input[type="radio"] {
+    display: none;
+}
+
+.tabs input[type="radio"]:checked + label {
+    border-bottom: 2px solid #0d0d0d;
+    color: #000000; 
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    margin: 0 10px;
+}
+
+.product-img {
+    width: 50px;
+    text-align: left;
+}
+
+.product-img h4 {
+    display: inline-block;
+    padding: 5px 7px;
+    line-height: 15px;
+    color: #000000; 
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border: 2px solid #0d0d0d;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.product-img img {
+    width: 150px;
+    height: 120px;
+}
+
+.product-txt {
+    width: 50%;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.product-txt h4 {
+    color: #000000; /*El nombre del producto en esfecifico de los productos en el slide de pizza, pastas y ensaladas*/ 
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.product-txt p {
+    color: #0d0d0d; /*El texto descriptivo de lo de arriba*/
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.product-txt span {
+    color: #000000; /*El precio de los productos*/
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.info {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.info-img {
+    width: 50%;
+}
+
+.info-img img {
+    width: 500px;
+    height: 250px;
+}
+
+.info-txt {
+    width: 50%;
+}
+
+.info-txt h2 {
+    font-size: 75px;
+    color: #000000; /*Texto principal del tercer cuadrante, donde hay un producto*/
+    font-weight: 800;
+    text-transform: uppercase; 
+    margin-bottom: 25px;
+}
+
+.info-txt p {
+    font-size: 18px;
+    color: #000000; /*El texto del tercer cuadrante*/
+    margin-bottom: 50px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #0d0d0d;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.btn-2:hover {
+    background-color: #e49800; 
+}
+
+.horario {
+    padding: 100px 0px;
+    background-color: #f4f4f4; 
+}
+
+.horario-info h2 {
+    font-size: 75px;
+    color: #000000; /* Titulo horario */
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.horario-txt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt {
+    color: #000000; /*info de la zona de la direccion, horario y cel */
+}
+
+.txt h4 {
+    font-size: 18px;
+    color: #A7A7A7; /*titulo de los producto en el slider principal*/
+    margin-bottom: 30px;
+}
+
+.txt p {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.map {
+    filter: grayscale(100%) invert(92%) contrast(93%);
+}
+
+.footer {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF; 
+}
+
+.links h4 {
+    color: #000000; 
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.links ul li a {
+    color: #000000; 
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+@media(max-width: 991px) {
+    .menu {
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    .menu-2 {
+        display: none;
+    }
+
+    .logo-1 {
+        width: 100px;
+    }
+
+    .logo-2 {
+        width: 0;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #181818;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header-content {
+        padding: 30px;
+        margin-top: 100px;
+    }
+
+    .slider {
+        flex-direction: column;
+    }
+
+    .slider-txt {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .slider-txt h1 {
+        font-size: 50px;
+    }
+
+    .slider-txt p {
+        font-size: 16px;
+    }
+
+    .btn-1 {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .slider-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .slider-img img {
+        margin-right: 0px;
+        width: 300px;
+    }
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets,
+    .swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: -7px;
+    }
+
+    .tabs {
+        padding: 50px 30px;
+    }
+
+    .tabs label {
+        width: 33%;
+    }
+
+    .info {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .info-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-img img {
+        width: 400px;
+        height: 200px;
+        margin-bottom: 25px;
+    }
+
+    .info-txt {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-txt h2 {
+        font-size: 50px;
+    }
+
+    .btn-2 {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    .horario-txt {
+        flex-direction: column;
+    }
+
+    .txt {
+        margin-bottom: 30px;
+    }
+
+    .txt h4 {
+        font-size: 14px;
+    }
+
+    .txt p {
+        font-size: 14px;
+    }
+
+    .map {
+        width: 100%;
+        height: 300px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .links {
+        margin-bottom: 30px;
+    }
+
+    .links ul li a {
+        font-size: 14px;
+    }
+
+    .socials {
+        margin-top: 30px;
+    }
+
+    .social {
+        margin: 0 8px;
+        height: 40px;
+        width: 40px;
+        border: 2px solid #e49800; 
+        border-radius: 50%;
+        background-color: #000000; 
+    }
+}
+  
